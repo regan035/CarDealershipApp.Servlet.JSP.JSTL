@@ -42,14 +42,23 @@
   <p class="lead">Your have x cars for sale. Total inventory value is $ x.xx.</p>
 </div>
 <div class = "main">
+
+</div>
+
+<%--if car arraylist empty => display Adding link, 
+    else =>display Car card  --%>
+<c:if test="${not empty cars}">
 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">View Details</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-</div>
+</c:if>
+
+
+
 </body>
 </html>

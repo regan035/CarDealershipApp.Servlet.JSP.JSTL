@@ -60,10 +60,7 @@ public class CarDealershipServlet extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		//session.setAttribute("car", car);
 		ArrayList<Car> cars = (ArrayList<Car>)session.getAttribute("cars");
-		if (cars==null) {
-			cars=new ArrayList<Car>();
-		}
-		
+
 		session.setAttribute("Car", car);
 		
 		RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
