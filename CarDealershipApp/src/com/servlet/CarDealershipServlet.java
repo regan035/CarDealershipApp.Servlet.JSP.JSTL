@@ -60,6 +60,7 @@ public class CarDealershipServlet extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		//session.setAttribute("car", car);
 		ArrayList<Car> cars = (ArrayList<Car>)session.getAttribute("cars");
+		cars.add;
 
 		session.setAttribute("Car", car);
 		

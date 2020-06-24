@@ -57,7 +57,10 @@
   </div>
 </div>
 </c:if>
-
+<c:if test="${empty cars }">
+Please add cars to your inventory 
+<a class="nav-link" href="add.jsp">Add Inventory</a>
+</c:if>
 
 
 </body>
