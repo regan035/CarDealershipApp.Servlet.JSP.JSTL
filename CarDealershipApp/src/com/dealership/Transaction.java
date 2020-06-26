@@ -1,10 +1,11 @@
 package com.dealership;
 
+import java.util.Date;
+
 public class Transaction {
 	private Customer customer;
 	private Car car;
-	private String inventoryDate;
-	private String soldDate;
+	private Date dateofSold;
 	public Transaction() {
 		super();
 	}
@@ -20,18 +21,14 @@ public class Transaction {
 	public void setCar(Car car) {
 		this.car = car;
 	}
-	public String getInventoryDate() {
-		return inventoryDate;
+	public Date getDateofSold() {
+		return dateofSold;
 	}
-	public void setInventoryDate(String inventoryDate) {
-		this.inventoryDate = inventoryDate;
+	public void setDateofSold(Date dateofSold) {
+		this.dateofSold = dateofSold;
 	}
-	public String getSoldDate() {
-		return soldDate;
-	}
-	public void setSoldDate(String soldDate) {
-		this.soldDate = soldDate;
-	}
+
+
 	
 	
 	

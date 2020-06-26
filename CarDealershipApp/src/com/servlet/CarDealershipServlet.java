@@ -49,6 +49,7 @@ public class CarDealershipServlet extends HttpServlet {
 		car.setType(request.getParameter("type"));
 		car.setEngineType(request.getParameter("engineType"));
 		car.setTransmission(request.getParameter("transmission"));
+		//car.setDateOfInventory(request.getParameter("dateOfInventory"));
 		
 		Double mile = Double.parseDouble(request.getParameter("mileage"));
 		Double finalPrice=Double.parseDouble(request.getParameter("price"));
@@ -59,12 +60,14 @@ public class CarDealershipServlet extends HttpServlet {
 
 		HttpSession session = request.getSession(true);
 		//session.setAttribute("car", car);
-		ArrayList<Car> cars = (ArrayList<Car>)session.getAttribute("cars");
-		cars.add;
+//		String carx= (String)session.getAttribute("cars");
+//		System.out.println("carx"+carx);
+//		ArrayList<Car> cars = (ArrayList<Car>)session.getAttribute("cars");
+//		cars.add;
 
 		session.setAttribute("Car", car);
 		
-		RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher rs = request.getRequestDispatcher("/index.jsp");
 		rs.forward(request, response);		
 		
 	}

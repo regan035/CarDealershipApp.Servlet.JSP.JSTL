@@ -39,11 +39,20 @@
  
  <form action="CarDealershipServlet" method="post" >
   <div class="form-group">
-    <label for=brand">Brand</label>
+    <label for="inventoryNumber">Inventory Number</label>
+    <input type="text" class="form-control" name="inventoryNumber" id="inventoryNumber" placeholder="Inventory Number">
+  </div>
+  <div class="form-group">
+    <label for="dateOfInventory">Inventory Date</label>
+    <input type="date" class="form-control" name="dateOfInventory" id="dateOfInventory" placeholder="Inventory Date">
+  </div>
+ 
+  <div class="form-group">
+    <label for="brand">Brand</label>
     <input type="text" class="form-control" name="brand" id="brand" placeholder="Brand">
   </div>
     <div class="form-group">
-    <label for="lastName">Model</label>
+    <label for="model">Model</label>
     <input type="text" class="form-control" name="model" id="model" placeholder="model">
   </div>
 
@@ -63,7 +72,7 @@
     </select>
   <br>
     Engine Type
-    <select class="form-control" name = "enginType">
+    <select class="form-control" name = "engineType">
       <option value="gasoline">Gasoline</option>
       <option value="diesel">Diesel</option>
       <option value="hybrid">Hybrid</option>
@@ -90,7 +99,7 @@
   </div>
   <div class="form-group">
     <label for="price">Price</label>
-    <input type="text" class="mileage" name="mileage" id="mileage">
+    <input type="text" class="price" name="price" id="price">
   </div>
  
   <button type="submit" class="btn btn-primary">Submit</button>

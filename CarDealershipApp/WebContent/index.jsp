@@ -51,9 +51,11 @@
 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">${brand}</h5>
+    <h5 class="card-title">${model}</h5>
+    <h5 class="card-title">${mileage}</h5>
+    <h5 class="card-title">${price}</h5>
+    <a href="carDetail.jsp" class="btn btn-primary">View Details</a>
   </div>
 </div>
 </c:if>

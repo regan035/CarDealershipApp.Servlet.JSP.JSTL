@@ -1,5 +1,7 @@
 package com.dealership;
 
+import java.util.Date;
+
 public class Car {
 	private String inventoryNumber;
 	private String brand;
@@ -13,6 +15,7 @@ public class Car {
 	private double price;
 	private String condition;
 	private boolean placeaBit;
+	private Date dateOfInventory;
 	
 	
 	public Car() {
@@ -144,6 +147,16 @@ public class Car {
 
 	public void setInventoryNumber(String inventoryNumber) {
 		this.inventoryNumber = inventoryNumber;
+	}
+
+
+	public Date getDateOfInventory() {
+		return dateOfInventory;
+	}
+
+
+	public void setDateOfInventory(Date dateOfInventory) {
+		this.dateOfInventory = dateOfInventory;
 	}
 	
 	
