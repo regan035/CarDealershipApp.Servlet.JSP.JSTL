@@ -26,7 +26,7 @@
         <a class="nav-link" href="add.jsp">Add Inventory</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="transaction.jsp">View Transaction</a>
+        <a class="nav-link" href="transactionReport.jsp">View Transaction</a>
       </li>
 
     </ul>
@@ -40,6 +40,10 @@
 <div class = "main">
  
  <form action="TransactionServlet" method="post" >
+ <div class="form-group">
+    <label for="inventoryNumber">Inventory Number</label>
+    <input type="text" class="form-control" name="inventoryNumber" id="inventoryNumber" placeholder="Inventory Number">
+  </div>
   <div class="form-group">
     <label for="firstName">First Name</label>
     <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">

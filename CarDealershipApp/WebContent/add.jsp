@@ -26,7 +26,7 @@
         <a class="nav-link" href="add.jsp">Add Inventory</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="transaction.jsp">View Transaction</a>
+        <a class="nav-link" href="transactionReport.jsp">View Transaction</a>
       </li>
 
     </ul>

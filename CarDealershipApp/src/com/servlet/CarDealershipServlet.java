@@ -59,11 +59,11 @@ public class CarDealershipServlet extends HttpServlet {
 		
 
 		HttpSession session = request.getSession(true);
-		//session.setAttribute("car", car);
+		session.setAttribute("car", car);
 //		String carx= (String)session.getAttribute("cars");
 //		System.out.println("carx"+carx);
-//		ArrayList<Car> cars = (ArrayList<Car>)session.getAttribute("cars");
-//		cars.add;
+		List<Car> cars = (ArrayList<Car>)session.getAttribute("cars");
+		cars.add(car);
 
 		session.setAttribute("Car", car);
 		

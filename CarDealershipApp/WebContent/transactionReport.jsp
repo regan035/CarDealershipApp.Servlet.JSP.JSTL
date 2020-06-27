@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="com.dealership.Car" %>
 <%Car car=(Car)session.getAttribute("car"); %>   
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Car Dealership</title>
+<title>Insert title here</title>
 <link rel = "stylesheet" type="text/css" href="./styles/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
@@ -31,32 +30,13 @@
       </li>
 
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0" action ="CarDealershipServlet" method="post" >
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
-
-
- <form action="TransactionServlet" method="post" >
-  <img src="..." class="mr-3" alt="...">
-  <div class="media-body">
-    <h5 class="mt-0">Brand: ${brand}</h5>
-    <h5 class="mt-0">Model: ${model}</h5>
-    <h5 class="mt-0">Type: ${type}</h5>
-    <h5 class="mt-0">Engine: ${engineType}</h5>
-    <h5 class="mt-0">Transmission: ${transmission}</h5>
-    <h5 class="mt-0">Mileage: ${mileage}</h5>
-    <h5 class="mt-0">Condition: ${condition}</h5>
-    <h5 class="mt-0">Date of Inventory: ${dateOfInventory}</h5>
-    <h5 class="mt-0">Sale on Bit: ${placeaBit}</h5>
-    <h5 class="mt-0">Price: ${price}</h5>
-    
-  </div>
-  <button type="submit" class="btn btn-primary">Car Sold</button>
-</form>
-
+ 
 
 </body>
 </html>
