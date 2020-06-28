@@ -2,7 +2,14 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="com.dealership.Car" %>
-<%Car car=(Car)session.getAttribute("car"); %>   
+
+<%
+
+Car car=(Car)session.getAttribute("car"); 
+
+
+%>   
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,6 +47,7 @@
  <div class="jumbotron">
   <h3 class="display-5">Hello, world!</h3>
   <p class="lead">Your have x cars for sale. Total inventory value is $ x.xx.</p>
+  <p><%out.println("car: " + car.getPrice()); %></p> 
 </div>
 <div class = "main">
 

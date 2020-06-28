@@ -57,15 +57,14 @@ public class CarDealershipServlet extends HttpServlet {
 		car.setPrice(finalPrice);		
 		car.setPlaceaBit(false);
 		
+		List<Car>cars = new ArrayList<>();
+		cars.add(car);
+		
 
 		HttpSession session = request.getSession(true);
 		session.setAttribute("car", car);
-//		String carx= (String)session.getAttribute("cars");
-//		System.out.println("carx"+carx);
-		List<Car> cars = (ArrayList<Car>)session.getAttribute("cars");
-		cars.add(car);
+		session.setAttribute("cars", cars);
 
-		session.setAttribute("Car", car);
 		
 		RequestDispatcher rs = request.getRequestDispatcher("/index.jsp");
 		rs.forward(request, response);		
